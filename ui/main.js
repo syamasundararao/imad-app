@@ -9,6 +9,7 @@ element.innerHTML="<h2>SAMPLE VALUE</h2>";
 var img=document.getElementById("im");
 alert(img);
 marginLeft=0;
+
 function righ()
 {
     marginLeft=marginLeft+4;
@@ -16,5 +17,6 @@ function righ()
 }
 img.onClick=function()
 {
+    alert("hai");
  setInterval(righ,1000);
 };
