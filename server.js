@@ -5,6 +5,47 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var article1=
+{
+    title:'Article One SYAM',
+    heading :'Article One',
+    date :'aug 2015 8',
+    content :
+    `
+    <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    `
+};
+
+var article2=
+{
+    title:'Article TWO SYAM',
+    heading :'Article TWO',
+    date :'aug 2015 8',
+    content :
+    `
+    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+    `
+};
+
+var article1=
+{
+    title:'Article THREE SYAM',
+    heading :'Article THREE',
+    date :'aug 2015 8',
+    content :
+    `
+    <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    `
+};
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
