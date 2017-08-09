@@ -10,7 +10,7 @@ var img=document.getElementById("im");
 marginLeft=0;
 function righ()
 {
-    marginLeft=marginLeft+30;
+    marginLeft=marginLeft+4;
     img.style.marginLeft=marginLeft+'px';
 }
 img.onClick=function()
