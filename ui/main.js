@@ -7,7 +7,13 @@ element.innerHTML="<h2>SAMPLE VALUE</h2>";
 
 
 var img=document.getElementById("im");
+marginLeft=0;
+function righ()
+{
+    marginLeft=marginLeft+30;
+    img.style.marginLeft=marginLeft+'px';
+}
 img.onClick=function()
 {
-  img.style.marginLeft='100px';  
+ setInterval(righ,1000);
 };
