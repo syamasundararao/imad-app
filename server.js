@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var article1=
+var articles={
+    article1:
 {
     title:'Article One SYAM',
     heading :'Article One',
@@ -17,9 +17,9 @@ var article1=
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     `
-};
+},
 
-var article2=
+article2:
 {
     title:'Article TWO SYAM',
     heading :'Article TWO',
@@ -29,7 +29,26 @@ var article2=
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
-    `};
+    `
+    
+},
+article3:
+{
+    title:'Article THREE SYAM',
+    heading :'Article TWO',
+    date :'aug 2015 8',
+    content :
+    `
+    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+   <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
+    `
+    
+}
+};
+
+
+
 
 
 
