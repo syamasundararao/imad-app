@@ -6,11 +6,11 @@ var element =document.getElementById("main_text");
 element.innerHTML="<h2>SAMPLE VALUE</h2>";
 
 
-var img=document.getElementById("im");
+var img1=document.getElementById("im");
 alert(img);
 marginLeft=0;
 
-img.onClick=function()
+img1.onClick=function()
 {
     alert("hai");
 // setInterval(righ,1000);
