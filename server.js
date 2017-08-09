@@ -44,7 +44,41 @@ var article1=
     p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     `
 };
+function createTemplate(data)
+{
+    data.title=title;
+    data.heading=heading;
+    data.date=date;
+    data.content=content;
 
+var htmlTemplate=`
+<html>
+    <head>
+        <title>
+           
+            ${title}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="/ui/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+    <div class="container">
+                    <a href="/">HOME</a>
+                    <p>${heading}</p>
+                    <hr/>
+                    <div>
+                        <p> ${date}</p>
+                        </div>
+                      
+                    <div>
+                       ${content}
+                    </div>
+    </div>
+</body>
+</html>
+return htmlTemplate;
+
+`;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
