@@ -32,18 +32,7 @@ var article2=
     `
 };
 
-var article1=
-{
-    title:'Article THREE SYAM',
-    heading :'Article THREE',
-    date :'aug 2015 8',
-    content :
-    `
-    <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    `
-};
+
 function createTemplate(data)
 {
     var title=data.title;
