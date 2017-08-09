@@ -10,11 +10,11 @@ var img=document.getElementById("im");
 alert(img);
 marginLeft=0;
 
-function righ()
+/*function righ()
 {
     marginLeft=marginLeft+4;
     img.style.marginLeft=marginLeft+'px';
-}
+}*/
 img.onClick=function()
 {
     alert("hai");
