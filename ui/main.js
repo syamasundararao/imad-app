@@ -18,5 +18,5 @@ function righ()
 img.onClick=function()
 {
     alert("hai");
- setInterval(righ,1000);
+// setInterval(righ,1000);
 };
