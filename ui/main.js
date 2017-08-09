@@ -7,7 +7,7 @@ element.innerHTML="<h2>SAMPLE VALUE</h2>";
 
 
 var img1=document.getElementById("im");
-alert(img);
+alert(img1);
 marginLeft=0;
 
 img1.onClick=function()
