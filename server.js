@@ -46,10 +46,10 @@ var article1=
 };
 function createTemplate(data)
 {
-    data.title=title;
-    data.heading=heading;
-    data.date=date;
-    data.content=content;
+    var title=data.title;
+var heading=data.heading;
+var date=data.date;
+var content=data.contentt;
 
 var htmlTemplate=`
 <html>
@@ -76,10 +76,11 @@ var htmlTemplate=`
     </div>
 </body>
 </html>
-return htmlTemplate;
+
 
 `;
-
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -89,7 +90,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 app.get("/article-one",function(req,res)
 {
-   res.sendFile(path.join(__dirname,"ui","article-one.html")); 
+   res.send(createTemplate); 
 });
 app.get("/article-two",function(req,res)
 {
