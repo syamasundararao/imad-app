@@ -14,8 +14,8 @@ var article1=
     content :
     `
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
+    <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     `
 };
 
