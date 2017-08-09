@@ -29,8 +29,7 @@ var article2=
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
     p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
     p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
-    `
-};
+    `};
 
 
 function createTemplate(data)
