@@ -23,7 +23,7 @@ submit.onclick=function()
             cnames=JSON.parse(cnames);
             for(var i=0;i<cnames.length;i++)
             {
-                list+="<string>"+cnames[i]+"</strong>";
+                list+="<string>"+cnames[i]+"</strong><br/>";
             }
             var ta=document.getElementById("a1");
             ta.innerHTML=list;
