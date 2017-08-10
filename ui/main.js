@@ -93,4 +93,50 @@ var name=nameInput.value;
 
 
 
+//Article -one
+
+
+var submit=document.getElementById("submit_id1");
+submit.onclick=function()
+{
+   alert('hi');
+   
+   var request=new XMLHttpRequest();
+  
+  request.onreadystatechange=function()
+  {
+    if(request.readyState==XMLHttpRequest.DONE)
+    {
+        if(request.status==200)
+        {
+              var list="";
+            var cnames=request.responseText;
+            cnames=JSON.parse(cnames);
+            for(var i=0;i<cnames.length;i++)
+            {
+                list+="<li>"+cnames[i]+"</li>";
+            }
+            var ta=document.getElementById("namelist");
+            ta.innerHTML=list;
+        }
+    }
+   
+      
+};  
+var nameInput=document.getElementById("data1");
+var name=nameInput.value;
+  alert(name);
+   
+  request.open("GET","http://syam5492009.imad.hasura-app.io/comment-name?name="+name,true);
+  request.send(null);
+    
+};
+
+
+
+
+
+
+
+
 
