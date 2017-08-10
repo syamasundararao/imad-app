@@ -16,8 +16,10 @@ var articles={
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article one for testing purpose and it will help a lot for doing more</p>
-    <p>Post YOur Comment </p><p><input type='text' id='data1'></input></p>
-    <p> Users Comments </p> <p><textarea cols=10 rows=10 id='a1'></textarea></p>
+    <p>Post YOur Comment </p><p><input type='text' id='data1'></input></p><p><input type='submit' value='submit'
+    id='submit_id1'></input>
+    <p> Users Comments </p> <p><textarea cols=30 rows=10 id='a1'></textarea></p>
+    
     
     
     `
@@ -33,8 +35,9 @@ var articles={
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
-     <p>Post YOur Comment </p><p><input type='text' id='data1'></input></p>
-    <p> Users Comments </p> <p><textarea cols=10 rows=10 id='a1'></textarea></p>
+    <p>Post YOur Comment </p><p><input type='text' id='data2'></input></p><p><input type='submit' value='submit'
+    id='submit_id2'></input>
+    <p> Users Comments </p> <p><textarea cols=30 rows=10 id='a2'></textarea></p>
     `
     
 },
@@ -48,8 +51,9 @@ var articles={
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
    <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
     <p> this is the content of my three article.This is a simple Article two for testing purpose and it will help a lot for doing more</p>
-     <p>Post YOur Comment </p><p><input type='text' id='data1'></input></p>
-    <p> Users Comments </p> <p><textarea cols=10 rows=10 id='a1'></textarea></p>
+    <p>Post YOur Comment </p><p><input type='text' id='data3'></input></p><p><input type='submit' value='submit'
+    id='submit_id3'></input>
+    <p> Users Comments </p> <p><textarea cols=30 rows=10 id='a3'></textarea></p>
     `
     
 }
