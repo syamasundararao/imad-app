@@ -7,11 +7,12 @@ element.innerHTML="<h2>SAMPLE VALUE</h2>";
 
 
 var img1=document.getElementById("im");
-alert(img1);
-marginLeft=0;
- alert("hai");
+    alert(img1);
+    marginLeft=0;
+    alert("hai");
+ 
 img1.onClick=function()
 {
-    alert("hai");
-// setInterval(righ,1000);
+    alert('hai');
 };
+ 
