@@ -10,7 +10,15 @@ var img1=document.getElementById("im");
     alert(img1);
     marginLeft=0;
     alert("hai");
+    function righ()
+    {
+        marginLeft=marginLeft+5;
+        img1.style.marginLeft=marginLeft+'px';
+        
+    }
+    
+    
 function fun()
 {
-    alert('hai');
+    setInterval(righ(),1000);
 }
