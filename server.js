@@ -94,6 +94,7 @@ var htmlTemplate=`
                     <div>
                        ${content}
                     </div>
+                    <script src="/ui/main.js"></script>
     </div>
 </body>
 </html>
