@@ -27,6 +27,7 @@ function fun()
 counter=0;
 //Counter Code
 var button=document.getElementById("counter");
+alert(button);
 button.onclick=function()
 {
   
