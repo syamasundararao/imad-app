@@ -23,7 +23,7 @@ submit.onclick=function()
             cnames=JSON.parse(cnames);
             for(var i=0;i<cnames.length;i++)
             {
-                list+="Anonymous Said <p>"+cnames[i]+"</p>";
+                list+="<string>"+cnames[i]+"</strong>";
             }
             var ta=document.getElementById("a1");
             ta.innerHTML=list;
