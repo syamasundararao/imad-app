@@ -85,7 +85,7 @@ var nameInput=document.getElementById("name");
 var name=nameInput.value;
   alert(name);
    
-  request.open("GET","http://syam5492009.imad.hasura-app.io/submit-name?name"+name,true);
+  request.open("GET","http://syam5492009.imad.hasura-app.io/submit-name?name="+name,true);
   request.send(null);
     
 };
