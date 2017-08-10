@@ -10,9 +10,7 @@ var img1=document.getElementById("im");
     alert(img1);
     marginLeft=0;
     alert("hai");
- 
-img1.onClick=function()
+function fun()
 {
     alert('hai');
-};
- 
+}
