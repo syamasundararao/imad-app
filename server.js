@@ -2,7 +2,8 @@ var express = require('express');
 var morgan = require('morgan'); //request and response
 var path = require('path');
 //var http=require('http');
-var pool=require('pg').Pool;
+
+//var pool=require('pg').Pool;
 
 
 var config={
