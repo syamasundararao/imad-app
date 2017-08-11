@@ -122,7 +122,7 @@ var pool=new Pool(config);
 app.get("/test-db",function(req,res)
 {
    
-   res.send('test-db');
+ //  res.send('test-db');
    //make a select request
    
   pool.query("select *from sql_test",function(err,result)
