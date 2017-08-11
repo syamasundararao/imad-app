@@ -1,9 +1,22 @@
 var express = require('express'); 
 var morgan = require('morgan'); //request and response
 var path = require('path');
+var http=require('http');
+var pool=require('pg').Pool;
+
+
+var config={
+    user:'syam5492009'
+    database:'syam5492009'
+    host:'http://db.imad.hasura-app.io'
+    port:'5432'
+    password:process_env.DB_PASSWORD
+}
 
 var app = express();
 app.use(morgan('combined'));
+
+
 
 var articles={
     'article-one':
@@ -103,6 +116,30 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
+
+var pool=new Pool(config);
+
+
+app.get("/test-db",function(req,res)
+{
+   
+   //make a select request
+   
+   pool.query("select *from sql_test",function(err,result)
+   {
+       
+       if(err)
+        res.status(500).send(err.toString());
+        else
+        res.send(JSON.stringify(result));
+   }
+   
+   
+   
+   );
+   
+    
+});
 
 var counter=0;
 app.get("/counter",function(req,res)
