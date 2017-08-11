@@ -6,12 +6,12 @@ var pool=require('pg').Pool;
 
 
 var config={
-    user:'syam5492009'
-    database:'syam5492009'
-    host:'http://db.imad.hasura-app.io'
-    port:'5432'
+    user:'syam5492009',
+    database:'syam5492009',
+    host:'http://db.imad.hasura-app.io',
+    port:'5432',
     password:process_env.DB_PASSWORD
-}
+};
 
 var app = express();
 app.use(morgan('combined'));
