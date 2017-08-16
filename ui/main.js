@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-
+/*
 
 //Article -one
 
@@ -32,6 +32,9 @@ submit.onclick=function()
    
       
 };  
+
+
+
 var nameInput=document.getElementById("data1");
 var name=nameInput.value;
   alert(name);
@@ -39,7 +42,7 @@ var name=nameInput.value;
   request.open("GET","http://syam5492009.imad.hasura-app.io/comment-name?name="+name,true);
   request.send(null);
     
-};
+};*/
 
 
 
