@@ -117,6 +117,30 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
+app.get('/',function(req,res)
+{
+   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+
+function hash(input)
+{
+    var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
+    return hashed.toString('hex');
+}
+
+
+
+/* Hashing */
+app.get('/has/:input',function(req,res)
+{
+   var hashedString=hash(req.params,'this-is-some-random-stirng');
+  res.send(hashedString);
+});
+
+
+
+
 
 var pool=new Pool(config);
 app.get("/test-db",function(req,res)
