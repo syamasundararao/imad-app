@@ -132,7 +132,7 @@ function hash(input,salt)
 
 
 /* Hashing */
-app.get('/has/:input',function(req,res)
+app.get('/hash/:input',function(req,res)
 {
    var hashedString=hash(req.params,'this-is-some-random-stirng');
   res.send(hashedString);
