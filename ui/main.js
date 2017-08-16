@@ -141,7 +141,7 @@ var pwdInput=document.getElementById("pwd").value;
   alert(nameInput);
    
   request.open("POST","http://syam5492009.imad.hasura-app.io/login",true);
-  request.setRequestHeader("'Content-Type':'application/json'");
+  request.setRequestHeader("'Content-Type','application/json'");
   request.send(JSON.stringify({username:username,password:password}));
     
 };
