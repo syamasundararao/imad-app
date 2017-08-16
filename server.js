@@ -19,7 +19,7 @@ var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
 
-
+/*
 var articles={
     'article-one':
 {
@@ -83,9 +83,9 @@ var articles={
 function createTemplate(data)
 {
     var title=data.title;
-var heading=data.heading;
-var date=data.date;
-var content=data.content;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
 
 var htmlTemplate=`
 <html>
@@ -118,6 +118,8 @@ var htmlTemplate=`
 `;
 return htmlTemplate;
 }
+
+*/
 app.get('/',function(req,res)
 {
    res.sendFile(path.join(__dirname, 'ui', 'index.html'));
