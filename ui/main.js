@@ -76,9 +76,9 @@ function fun()
 //counter=0;
 //Counter Code
 
+/*
 
-
-var button=document.getElementById("counter");
+var button=document.getElementById("s");
 alert(button);
 button.onclick=function()
 {
@@ -102,11 +102,11 @@ button.onclick=function()
   request.open("GET","http://syam5492009.imad.hasura-app.io/counter")
   request.send(null);
  
-};
+};*/
 
 //Submit Name
 
-var submit=document.getElementById("submit_btn");
+var submit=document.getElementById("s");
 submit.onclick=function()
 {
    alert('hi');
@@ -119,26 +119,29 @@ submit.onclick=function()
     {
         if(request.status==200)
         {
-              var list="";
-            var names=request.responseText;
-            names=JSON.parse(names);
-            for(var i=0;i<names.length;i++)
-            {
-                list+="<li>"+names[i]+"</li>";
-            }
-            var ul=document.getElementById("namelist");
-            ul.innerHTML=list;
+            alert("login success");
+            
         }
+        else if(request.status==403)
+        {
+            alert("username/password is invalid");
+        }
+        else if(request.status==500)
+        {
+            alert("something went wrong");
+        }
+        
     }
    
       
 };  
-var nameInput=document.getElementById("name");
-var name=nameInput.value;
-  alert(name);
+var nameInput=document.getElementById("uname").value;
+var pwdInput=document.getElementById("pwd").value;
+
+  alert(nameInput);
    
-  request.open("GET","http://syam5492009.imad.hasura-app.io/submit-name?name="+name,true);
-  request.send(null);
+  request.open("POST","http://syam5492009.imad.hasura-app.io/login",true);
+  request.send(JSON.stringfy(username:username,password:password));
     
 };
 
